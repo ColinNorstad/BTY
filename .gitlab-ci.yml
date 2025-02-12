@@ -1,0 +1,8 @@
+pages:
+  stage: deploy         # Specifies that this job runs in the 'deploy' stage
+  script:               # Commands to execute in the job
+    - mkdir .public     # Creates a public directory
+    - cp -r * .public   # Copies all files to the public directory
+  artifacts:            # Artifacts are files GitLab will save and make public
+    paths:
+      - .public         # Tells GitLab to use this directory for Pages
