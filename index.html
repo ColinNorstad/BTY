@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0;url=bty.html">
-    <title>Redirecting...</title>
+    <title>Task of the Day</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-  <p>If you are not redirected automatically, <a href="bty.html">click here</a>.</p>
+    <div class="container">
+        <h1>Task of the Day</h1>
+        <div id="task-container">
+            <p id="task">Click the button to get your task of the day!</p>
+        </div>
+        <button onclick="generateTask()">Get Task</button>
+        <div id="completed-tasks">
+            <h2>Completed Tasks: <span id="task-counter">0</span></h2>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
