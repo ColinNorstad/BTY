@@ -1,0 +1,86 @@
+.signin {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200x; /* Adjust width as needed */
+  padding: 20px;
+  margin: 20px;
+  align-self: flex-start;
+}
+
+input{
+  border: none;
+  border-radius: 11px;
+  margin-left: 10px;
+  padding: 7px;
+  font-size: 15px;
+  color: gray;
+}
+
+input::placeholder{
+  color: #D9D9D9;
+}
+
+input:focus{
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+}
+
+.google-sign-in-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 5px 5px;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.google-sign-in-button:hover {
+  box-shadow: 2px 2px 6px rgba(205, 202, 202, 0.644);
+  font-weight: bold;
+  font-size: 9px;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+button[value="login"]{
+  margin: 10px;
+  margin-bottom: -4px;
+  font-size: 20px;
+  border-radius: 16px;
+  width : 200px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  background-color: #2A534E;
+  color: white;
+  transition: 0.2s;
+}
+button[value="login"]:hover{
+  color: #2A534E;
+  background-color: white;
+}
+
+.signup-link{
+  text-decoration: none;
+  color: #2A534E;
+}
+
+.signup-link:hover{
+  text-decoration: underline;
+}
+
+.account{
+  font-size: 12px;
+}

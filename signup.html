@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <title>Task a Day</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/signup.css">
+  </head>
+  <body>
+    <a href="bty.html" target="_self" class="linkBack"> <h1 class="title1">Task A Day<img class="logo" src="assets/logo.png" alt ="logo"></h1></a>
+    <div class="signup">
+      <h2>Sign Up</h2>
+      <form action="/login.html" method="get">  
+        <div class="input-container">
+          <input type="text" id="Name" placeholder=" " name="Name">
+          <label for="Name">Full Name</label>
+        </div>
+        <div class="input-container">
+          <input type="text" id="username" name="username" placeholder=" ">
+          <label for="username">Username</label>
+        </div> 
+        <div class="input-container">
+          <input type="email" id="email" name="email" placeholder=" ">
+          <label for="email">Email</label>
+        </div> 
+        <div class="input-container">
+          <input type="password" id="password" name="password" placeholder=" ">
+          <label for="password">Create Password</label>
+          <span class="password-toggle" onclick="togglePasswordVisibility()">Show</span>
+        </div> 
+        <div class="input-container">
+          <input type="password" id="Confirm Password" name="Confirm Password" placeholder=" ">
+          <label for="Confirm Password">Confirm Password</label>
+        </div>         
+          <button type="submit" name="action" value="login">Sign Up</button>
+      </form>
+      <p class="account">Already have an account <a href="bty.html" class="login-link">Login!</a></p>
+  </div>
+
+  <script src="JS/signup.js"></script>
+  </body>
+</html>

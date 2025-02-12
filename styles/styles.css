@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Yusei Magic", sans-serif;
+  /*background-image: linear-gradient(to bottom, #ABDBE2, #87C7A4) ;*/
+  background-image: linear-gradient(to bottom, #151212dc, #AAAA);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: 1000px;
+}
+
+.title1 {
+  text-align: center;
+  width: 100%;
+}
+h2{
+  margin: 10px;
+  margin-bottom: 0px;
+}
+p{
+  margin: 8px;
+}
+.logo{
+  height: 35px;
+  vertical-align: bottom;
+}
+
+.main-content {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.examples {
+  flex: 2;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 5px;
+  max-width: 410px;
+}
+
+.examples h1{
+  text-align: center;
+  color: #87C7A4;
+  display: inline-flex;
+}

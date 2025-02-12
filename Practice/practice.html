@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show Password Button</title>
+<style>
+  .password-container {
+    position: relative;
+    width: 300px;
+  }
+  .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="password-container">
+  <input type="password" id="password" name="password" placeholder="Password">
+  <span class="password-toggle" onclick="togglePasswordVisibility()">Show</span>
+</div>
+<script>
+  function togglePasswordVisibility() {
+    var passwordInput = document.getElementById("password");
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      document.querySelector(".password-toggle").textContent = "Hide";
+    } else {
+      passwordInput.type = "password";
+      document.querySelector(".password-toggle").textContent = "Show";
+    }
+  }
+</script>
+</body>
+</html>

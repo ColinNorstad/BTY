@@ -1,0 +1,36 @@
+.input-container {
+  position: relative;
+  margin: 20px 0;
+  width: 300px; /* Adjust width as needed */
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  padding-top: 20px; /* Padding to allow space for the label */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  background-color: #eaad0f;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #333;
+  background-color: white;
+  padding: 0 5px;
+}

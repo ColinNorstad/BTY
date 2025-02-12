@@ -1,0 +1,55 @@
+.box{
+  font-family: "Yusei Magic", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  max-width: 400px;
+  border: 3px solid #d9d9d9;
+  color: #d9d9d9;
+  margin-bottom: 20px;
+  padding: 4px;
+}
+.userDetails{
+  display: flex;
+}
+.profile-picture{
+  width:20px;
+  height: 20px;
+  border-radius:25px;
+  background-color: #87C7A4;
+}
+.TaskName{
+  text-align: center;
+  font-style: italic;
+}
+.ChallengeResponse{
+  text-align: center;
+  margin-bottom: 5px;
+}
+.Response{
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* This centers the items vertically */
+}
+.ResponseText{
+  flex: 1;
+  margin: 8px;
+  padding-right: 2px;
+  margin-right: 3px;
+  border-right: 3px solid #87C7A4;
+  display: flex;
+  align-items: center; /* This centers the text vertically */
+  text-align: left; /* This ensures the text is centered */
+  font-size: 12px;
+  min-height: 105px;
+}
+.ResponseImg{
+  flex: 1;
+  text-align: center;
+  background-color: #d9d9d9;
+  border: 5px solid white;
+}
+.rImg{
+  margin-top: 4px;
+  height: 100px;
+}

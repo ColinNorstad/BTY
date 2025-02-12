@@ -1,0 +1,119 @@
+.signup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200x; /* Adjust width as needed */
+  padding: 20px;
+  margin: 20px;
+  align-self: center;
+}
+
+.input-container {
+  position: relative;
+  margin: 8px 0;
+  min-width: 250px;
+}
+
+.linkBack, linkBack:visited, linkBack:hover, linkBack:active {
+  color: inherit;
+  text-decoration: none;
+  z-index: 1;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin: 2px;
+    padding: 6px;
+    font-size: 15px;
+    color: gray;
+    box-sizing: border-box;
+}
+
+label {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: #D9D9D9;  
+  pointer-events: none;
+  transition: 0.2s ease all;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -7px;
+  left: 10px;
+  font-size: 13px;
+  color: gray;
+  padding: 0 5px;
+  font-weight: 500;
+}
+
+
+input::placeholder{
+  color: #D9D9D9;
+}
+
+input::after::placeholder{
+  color: black;
+}
+
+input:focus{
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey;
+  border: none;
+}
+
+button[value="login"]{
+  margin: 10px;
+  margin-bottom: -4px;
+  font-size: 20px;
+  border-radius: 16px;
+  width : 260px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  background-color: #2A534E;
+  color: white;
+  transition: 0.2s;
+}
+button[value="login"]:hover{
+  color: #2A534E;
+  background-color: white;
+}
+
+.login-link{
+  text-decoration: none;
+  color: #2A534E;
+  z-index: 2;
+}
+
+.login-link:hover{
+  text-decoration: underline;
+}
+
+.account{
+  font-size: 12px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: gray;
+  display: none; /* Initially hidden */
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.password-toggle:hover {
+  text-decoration:none;
+}
